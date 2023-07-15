@@ -1,5 +1,5 @@
 import sun from "../assets/sol.png";
-import fondo from "../assets/Fondo.jpg";
+import fondo from "../assets/fondo.jpg";
 import fondo2 from "../assets/fondo2.png";
 import fondo3 from "../assets/fondo3.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
