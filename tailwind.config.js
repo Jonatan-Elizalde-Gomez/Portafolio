@@ -5,7 +5,17 @@ export default {
     extend: {
       colors: {
         'backgroundColor': '#001021',
+        'letters':'#FCEBC1'
       },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'victor-mono': ['Victor Mono', 'monospace'],
+        'narrow': ['PT Sans Narrow', 'sans-serif'],
+        'baskerville': ['Libre Baskerville', 'serif'],
+        'hanuman': ['hanuman', 'serif'],
+        'crimson': ['Crimson Pro', 'serif'],
+      }
     },
   },
   plugins: [],
