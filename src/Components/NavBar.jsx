@@ -36,8 +36,21 @@ function NavBar() {
     leave: { opacity: 0, transform: "translateY(-10px)" },
   });
 
+    // Función para desplazarse suavemente hacia la sección correspondiente al hacer clic en el enlace del NavBar
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+        setMenuOpen(false); // Cerrar el menú al hacer clic en un enlace
+      }
+    };
+
   return (
     <nav
+    style={{zIndex:"999"}}
       className={`${
         sticky ? "sticky top-0" : ""
       } h-fit font-thin text-xl bg-backgroundColor border-letters border-b w-full`}
@@ -55,9 +68,9 @@ function NavBar() {
         </div>
         <div className="hidden sm:block">
           <ul className="flex space-x-10 items-center">
-            <li>Acerca de mí</li>
-            <li>Habilidades</li>
-            <li>Contacto</li>
+          <li className="cursor-pointer" onClick={() => scrollToSection("about-me")}>Acerca de mí</li>
+            <li className="cursor-pointer" onClick={() => scrollToSection("portafolio")}>Portafolio</li>
+            <li className="cursor-pointer" onClick={() => scrollToSection("contact")}>Contacto</li>
           </ul>
         </div>
         {transitions(
@@ -67,9 +80,9 @@ function NavBar() {
                 className="sm:flex sm:space-x-10 sm:items-center"
                 style={style}
               >
-                <li>Acerca de mí</li>
-                <li>Habilidades</li>
-                <li>Contacto</li>
+            <li className="cursor-pointer" onClick={() => scrollToSection("about-me")}>Acerca de mí</li>
+            <li className="cursor-pointer" onClick={() => scrollToSection("portafolio")}>Portafolio</li>
+            <li className="cursor-pointer" onClick={() => scrollToSection("contact")}>Contacto</li>
                 <button className="flex gap-x-1.5">
                   <p>CV</p>
                   <img src={downloadSvg} width={"25px"} alt="Descargar" />
