@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import sun from "../assets/sol.png";
-import fondo from "../assets/fondo.jpg";
-import fondo2 from "../assets/fondo2.png";
-import fondo3 from "../assets/fondo3.png";
+import sun from "/sol.png";
+import fondo from "/fondo.jpg";
+import fondo2 from "/fondo2.png";
+import fondo3 from "/fondo3.png";
 import { Fade, Bounce } from "react-reveal";
 
 function Landscape() {

@@ -1,8 +1,8 @@
 import NavBar from "./Components/NavBar";
 import Landscape from "./Components/Landscape";
-import AboutMe from "./Components/AboutMe";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import Projects from "./Components/Portafolio/Projects";
+import Contact from "./Components/Contact/Contact";
 
 function Portafolio() {
   return (

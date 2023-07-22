@@ -1,8 +1,17 @@
 import React from "react";
 import { Fade } from "react-reveal";
 
-const Card = ({ imagen, titulo, parrafo, link1, link2, mostrarIcono1, mostrarIcono2}) => {
+const Card = ({
+  imagen,
+  titulo,
+  parrafo,
+  link1,
+  link2,
+  mostrarIcono1,
+  mostrarIcono2,
+}) => {
   return (
+    <Fade bottom>
     <div
       className="bg-[#001730] rounded-lg p-8 w-80 sm:w-[500px] text-letter shadow-4xl shadow-red-200 ring-2 ring-offset-2 ring-[#001021]"
       style={{
@@ -29,29 +38,29 @@ const Card = ({ imagen, titulo, parrafo, link1, link2, mostrarIcono1, mostrarIco
       </div>
 
       {/* Iconos */}
-        <div className="flex items-end">
-          {/* items-end para alinear los iconos abajo */}
-      {mostrarIcono1 && (
+      <div className="flex items-end">
+        {/* items-end para alinear los iconos abajo */}
+        {mostrarIcono1 && (
           <div className="mr-2">
             <a href={link1} target="_blank" rel="noopener noreferrer">
               <img
-                src="src/assets/github.svg"
+                src="/github.svg"
                 alt="Icono 1"
                 className="w-6 h-6"
               />
             </a>
           </div>
-          )}
-      {mostrarIcono2 && (
-
+        )}
+        {mostrarIcono2 && (
           <div>
             <a href={link2} target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/web.svg" alt="Icono 2" className="w-6 h-6" />
+              <img src="/web.svg" alt="Icono 2" className="w-6 h-6" />
             </a>
           </div>
-                    )}
-        </div>
+        )}
+      </div>
     </div>
+    </Fade>
   );
 };
 

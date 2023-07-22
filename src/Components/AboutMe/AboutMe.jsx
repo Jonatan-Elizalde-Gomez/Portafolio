@@ -1,10 +1,9 @@
 import React from "react";
-import AnimatedDivider from "./AnimatedDivider";
+import AnimatedDivider from "../Shared/AnimatedDivider";
 import { Fade, Bounce } from "react-reveal";
 import Skills from "./Skills";
 
 function AboutMe() {
-
   return (
     <section
       id="about-me"
@@ -15,7 +14,7 @@ function AboutMe() {
           <h1 className="text-5xl sm:text-7xl">Acerca de mi</h1>
         </Bounce>
 
-        <AnimatedDivider scrollPositionOffset={300} speedMultiplier={5.3} />
+        <AnimatedDivider scrollPositionOffset={250} speedMultiplier={5.3} />
 
         <Fade bottom>
           <div className="pb-10 flex justify-center ">
@@ -39,8 +38,7 @@ function AboutMe() {
           </p>
         </Fade>
 
-        <Skills/>
-      
+        <Skills />
       </div>
     </section>
   );

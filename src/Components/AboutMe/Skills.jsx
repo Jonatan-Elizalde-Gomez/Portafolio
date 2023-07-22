@@ -11,7 +11,7 @@ function Skills() {
     "TypeScript",
     "CSS3",
     "SwiftUI",
-    "Flutter"
+    "Flutter",
   ];
 
   const backEnd = ["Express", "MySQL", "MongoDB", "Firebase"];
@@ -34,7 +34,7 @@ function Skills() {
 
       <div className="flex flex-col items-center w-[300px] md:w-[100%] md:px-14">
         <Bounce>
-          <img src="src/assets/code.svg" alt="Icono 1" className="w-32 h-32" />
+          <img src="/code.svg" alt="Icono 1" className="w-32 h-32" />
         </Bounce>
         <Fade>
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-5 pb-20">
@@ -49,7 +49,7 @@ function Skills() {
         <div className="flex flex-col items-center" style={{ width: "300px" }}>
           <Bounce>
             <img
-              src="src/assets/database.svg"
+              src="/database.svg"
               alt="Icono 1"
               className="w-28 h-28 mb-5"
             />
@@ -66,7 +66,7 @@ function Skills() {
         <div className="flex flex-col items-center" style={{ width: "300px" }}>
           <Bounce>
             <img
-              src="src/assets/wrench.svg"
+              src="/wrench.svg"
               alt="Icono 1"
               className="w-28 h-28 mb-5"
             />

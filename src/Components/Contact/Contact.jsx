@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedDivider from "./AnimatedDivider";
+import AnimatedDivider from "../Shared/AnimatedDivider";
 import { Fade, Bounce } from "react-reveal";
 
 function Contact() {
@@ -36,7 +36,7 @@ function Contact() {
             rel="noopener noreferrer"
           >
             <img
-              src="src/assets/github.svg"
+              src="/github.svg"
               alt="Icono 1"
               className="w-10 h-10"
             />
@@ -49,7 +49,7 @@ function Contact() {
             download="CV - Jonatan Elizalde Gomez"
           >
             <img
-              src="src/assets/downloadWhite.svg"
+              src="/downloadWhite.svg"
               alt="Icono 1"
               className="w-10 h-10"
             />
@@ -61,7 +61,7 @@ function Contact() {
             rel="noopener noreferrer"
           >
             <img
-              src="src/assets/linkedin.svg"
+              src="/linkedin.svg"
               alt="Icono 1"
               className="w-8 h-8"
             />

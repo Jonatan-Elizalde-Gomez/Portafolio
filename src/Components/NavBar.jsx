@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTransition, animated } from "react-spring";
 
-import menuSvg from "../assets/menu.svg";
-import closeSvg from "../assets/close.svg";
-import downloadSvg from "../assets/download.svg";
+import menuSvg from "/menu.svg";
+import closeSvg from "/close.svg";
+import downloadSvg from "/download.svg";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
