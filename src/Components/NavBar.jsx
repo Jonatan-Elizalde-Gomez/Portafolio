@@ -110,7 +110,7 @@ function NavBar() {
                     {item.label}
                   </div>
                 ))}
-                <button
+                <a
                   className="flex gap-x-1.5"
                   href="/cv.pdf"
                   target="_blank"
@@ -119,12 +119,12 @@ function NavBar() {
                 >
                   <p>CV</p>
                   <img src={downloadSvg} width={"25px"} alt="Descargar" />
-                </button>
+                </a>
               </animated.div>
             )
         )}
         <div className="hidden sm:block">
-          <button
+          <a
             className="flex gap-x-1.5"
             href="/cv.pdf"
             target="_blank"
@@ -133,7 +133,7 @@ function NavBar() {
           >
             <p>CV</p>
             <img src={downloadSvg} width={"25px"} alt="Descargar" />
-          </button>
+          </a>
         </div>
       </div>
     </nav>
