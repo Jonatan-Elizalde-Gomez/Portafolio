@@ -13,7 +13,7 @@ function Contact() {
           <h1 className="text-5xl sm:text-7xl pb-2">Contactame</h1>
         </Bounce>
 
-        <AnimatedDivider scrollPositionOffset={700} speedMultiplier={1} />
+        <AnimatedDivider scrollPositionOffset={3680} speedMultiplier={1} />
 
         <Fade bottom>
           <div className="text-xl sm:text-2xl leading-relaxed">
@@ -28,7 +28,7 @@ function Contact() {
             <p className="font-bold">+52-443-386-6522</p>
           </div>
         </Fade>
-        <AnimatedDivider scrollPositionOffset={700} speedMultiplier={1} />
+        <AnimatedDivider scrollPositionOffset={4000} speedMultiplier={1} />
         <div className="flex items-center justify-center gap-10">
           <a
             href="https://github.com/Jonatan-Elizalde-Gomez"
