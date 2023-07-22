@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const AnimatedDivider = ({scrollPositionOffset, speedMultiplier}) => {
+const AnimatedDivider = ({ scrollPositionOffset, speedMultiplier }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -27,7 +27,6 @@ const AnimatedDivider = ({scrollPositionOffset, speedMultiplier}) => {
 
   // Ensure that the SVG doesn't continue drawing once it's complete
   if (svgDrawnPercentage >= 100) {
-    console.log(svgDrawnPercentage);
     svgStrokeDashOffset = 0;
   }
   return (

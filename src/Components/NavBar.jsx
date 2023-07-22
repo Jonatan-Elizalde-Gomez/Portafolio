@@ -36,27 +36,42 @@ function NavBar() {
     leave: { opacity: 0, transform: "translateY(-10px)" },
   });
 
-    // Función para desplazarse suavemente hacia la sección correspondiente al hacer clic en el enlace del NavBar
-    const scrollToSection = (sectionId) => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        window.scrollTo({
-          top: section.offsetTop,
-          behavior: "smooth",
-        });
-        setMenuOpen(false); // Cerrar el menú al hacer clic en un enlace
-      }
-    };
+  const menuItems = [
+    { id: "about-me", label: "Acerca de mi" },
+    { id: "portafolio", label: "Portafolio" },
+    { id: "contact-me", label: "Contacto" },
+  ];
+
+  // Funcion para desplazarse suavemente hacia la seccion correspondiente al hacer clic en el enlace del NavBar
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (sectionId == "contact-me" && section) {
+      setMenuOpen(false); // Cerrar el menu al hacer clic en un enlace
+
+      const alturaPagina = document.body.scrollHeight;
+
+      window.scrollTo({
+        top: alturaPagina,
+        behavior: "smooth",
+      });
+    } else if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 150,
+        behavior: "smooth",
+      });
+      setMenuOpen(false); // Cerrar el menu al hacer clic en un enlace
+    }
+  };
 
   return (
     <nav
-    style={{zIndex:"999"}}
+      style={{ zIndex: "999" }}
       className={`${
         sticky ? "sticky top-0" : ""
-      } h-fit font-thin text-xl bg-backgroundColor border-letters border-b w-full`}
+      } h-fit font-thin text-xl bg-backgroundColor border-letters border-b w-full text-letters`}
       ref={navRef}
     >
-      <div className="flex justify-between items-center px-4 py-4 sm:px-6">
+      <div className="flex justify-between items-center px-4 py-4 sm:pt-6">
         <div>
           <button className="font-medium sm:hidden" onClick={toggleMenu}>
             {!menuOpen ? (
@@ -67,27 +82,39 @@ function NavBar() {
           </button>
         </div>
         <div className="hidden sm:block">
-          <ul className="flex space-x-10 items-center">
-          <li className="cursor-pointer" onClick={() => scrollToSection("about-me")}>Acerca de mí</li>
-            <li className="cursor-pointer" onClick={() => scrollToSection("portafolio")}>Portafolio</li>
-            <li className="cursor-pointer" onClick={() => scrollToSection("contact")}>Contacto</li>
-          </ul>
+          <div className="flex space-y-4 sm:space-y-0 sm:space-x-10 items-center">
+            {menuItems.map((item) => (
+              <div
+                key={item.id}
+                className="cursor-pointer"
+                onClick={() => scrollToSection(item.id)}
+              >
+                {item.label}
+              </div>
+            ))}
+          </div>
         </div>
         {transitions(
           (style, item) =>
             item && (
-              <animated.ul
-                className="sm:flex sm:space-x-10 sm:items-center"
+              <animated.div
+                className={`sm:flex sm:space-x-10 sm:items-center menu-columns`}
                 style={style}
               >
-            <li className="cursor-pointer" onClick={() => scrollToSection("about-me")}>Acerca de mí</li>
-            <li className="cursor-pointer" onClick={() => scrollToSection("portafolio")}>Portafolio</li>
-            <li className="cursor-pointer" onClick={() => scrollToSection("contact")}>Contacto</li>
+                {menuItems.map((item) => (
+                  <div
+                    key={item.id}
+                    className="cursor-pointer"
+                    onClick={() => scrollToSection(item.id)}
+                  >
+                    {item.label}
+                  </div>
+                ))}
                 <button className="flex gap-x-1.5">
                   <p>CV</p>
                   <img src={downloadSvg} width={"25px"} alt="Descargar" />
                 </button>
-              </animated.ul>
+              </animated.div>
             )
         )}
         <div className="hidden sm:block">

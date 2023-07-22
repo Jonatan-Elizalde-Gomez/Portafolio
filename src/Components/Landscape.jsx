@@ -3,20 +3,21 @@ import sun from "../assets/sol.png";
 import fondo from "../assets/fondo.jpg";
 import fondo2 from "../assets/fondo2.png";
 import fondo3 from "../assets/fondo3.png";
+import { Fade, Bounce } from "react-reveal";
 
 function Landscape() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      // Mover el sol hacia abajo a una velocidad más lenta
+      // Mover el sol hacia abajo a una velocidad mas lenta
       const sunElement = document.getElementById("sun");
       sunElement.style.transform = `translateY(${
         scrollY * 1.5
       }px) translateX(-50%)`;
       sunElement.style.transition = "transform 1s cubic-bezier(0.3, 1, 0.5, 1)";
 
-      // Mover el fondo 2 hacia arriba a una velocidad más lenta
+      // Mover el fondo 2 hacia arriba a una velocidad mas lenta
       const fondo2Element = document.getElementById("fondo2");
       fondo2Element.style.transform = `translateY(${scrollY * -1.5}px)`;
       fondo2Element.style.transition =
@@ -61,7 +62,9 @@ function Landscape() {
         }}
         className="w-40 md:w-48"
       >
-        <img src={sun} alt="Sun" style={{ width: "100%" }} />
+        <Fade>
+          <img src={sun} alt="Sun" style={{ width: "100%" }} />
+        </Fade>
       </div>
 
       {/* Fondo 3 */}

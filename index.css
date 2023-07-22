@@ -2,36 +2,33 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Estilos generales de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra */
+  height: 5px; /* Altura de la barra */
+}
 
-  /* Estilos generales de la barra de desplazamiento */
-  ::-webkit-scrollbar {
-    width: 5px; /* Ancho de la barra */
-    height: 5px; /* Altura de la barra */
-  }
+/* Estilo del riel */
+::-webkit-scrollbar-track {
+  background-color: #001021;
+}
 
-  /* Estilo del riel */
-  ::-webkit-scrollbar-track {
-    background-color: #001021;
-  }
+/* Estilo del pulgar */
+::-webkit-scrollbar-thumb {
+  background-color: #fcebc1; /* Color del pulgar */
+  border-radius: 5px; /* Radio de los bordes del pulgar */
+}
 
-  /* Estilo del pulgar */
-  ::-webkit-scrollbar-thumb {
-    background-color: #fcebc1; /* Color del pulgar */
-    border-radius: 5px; /* Radio de los bordes del pulgar */
-  }
-
-  /* Estilo del pulgar cuando se desplaza */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #c5af76; /* Color del pulgar en hover */
-  }
-
+/* Estilo del pulgar cuando se desplaza */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c5af76; /* Color del pulgar en hover */
+}
 
 body {
-  color: #fcebc1;
+  color: #ffffff;
   background-color: #001021;
   font-family: "hanuman", "hanuman", serif;
 }
-
 
 /* index.css (o el archivo de estilos globales) */
 @keyframes fadeInUp {
@@ -47,4 +44,105 @@ body {
 
 .fade-in-up {
   animation: fadeInUp 1s ease;
+}
+
+.shapedividers_com-2143 {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+.shapedividers_com-2143::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 49px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 91.5"><path fill="%23001021" d="M2000 0v26c-14-1-29 4-42 11-21 12-40 30-63 34-24 5-48-6-71-16-21-8-42-16-64-18-47-5-94 17-140 33s-98 25-139-4c-13-8-25-20-39-19-10 1-18 7-26 12-34 22-75 28-112 15-12-4-25-11-31-24-8-18-28-26-45-23s-30 15-46 24c-51 28-111 23-167 18l-15-2-15 2c-56 5-116 10-168-18-15-9-29-20-45-24s-37 5-45 23c-6 13-19 20-31 24-37 13-78 7-112-15-8-5-16-11-26-12-14-1-26 11-39 19-41 29-93 20-139 4s-92-38-140-33c-22 2-43 10-64 18-23 10-47 21-71 16-23-4-42-22-63-34-13-7-28-12-42-11V0z" opacity=".75"/><path fill="%23001021" d="M542 0c-21 9-48 18-80 29a127 127 0 01-65 5l-1-1-32-7-19-4a78 78 0 00-19-1 87 87 0 00-24 4 180 180 0 00-25 11l-6 3-2 1-7 4-2 1-21 9c-16 7-31 7-46 4-15-2-31-8-46-15l-19-8c-19-7-38-13-58-12h-3a71 71 0 00-32 10 97 97 0 00-19 16A283 283 0 000 67V32c18-11 38-19 57-22 31-4 69 5 99 14l10 3a70 70 0 0110 5c17 8 36 15 54 6l1-1a199 199 0 0018-11l11-7a76 76 0 0111-5 87 87 0 0118-5 124 124 0 0119-1 265 265 0 0132 2c21 2 43 7 62 5 17-2 32-8 47-15zM1185 0l-2 1-15 11-24 18a424 424 0 01-65 35 331 331 0 01-31 12q-10 4-21 6a132 132 0 01-27 4 132 132 0 01-27-4q-11-2-21-6a331 331 0 01-31-12 424 424 0 01-65-35l-24-18-15-11-2-1h8l9 6c41 30 116 29 168 3 52 26 127 27 168-3l9-6z" opacity=".51"/><path fill="%23001021" d="M696 0c-17 13-33 28-50 39a78 78 0 01-54 13 251 251 0 01-28-6c-29-8-56-17-83 0l-11 5c-45 21-111 28-178-2q-11-4-21-10l-22-13a307 307 0 01-33-26h82a403 403 0 0028 21 238 238 0 0035 19 138 138 0 0014 6 140 140 0 0017 4 91 91 0 0032 1 103 103 0 0024-7c31-14 56-36 115-21 11 2 19 8 30 12l4 1c10 2 19 0 27-5 12-6 23-17 32-23l15-8z" opacity=".51"/><circle  fill="%23001021" cx="59.2" cy="72.6" r="17.1" transform="rotate(-67 59 73)" opacity=".51"/><path fill="%23001021" d="M580 0a19 19 0 01-6 9 19 19 0 01-26-5 18 18 0 01-2-4z"/><circle  fill="%23001021" cx="289.2" cy="30" r="13.4"/><circle  fill="%23001021" cx="258.1" cy="62.6" r="5.9" opacity=".51"/><circle  fill="%23001021" cx="939.3" cy="63.8" r="18.6" opacity=".51"/><circle  fill="%23001021" cx="679.5" cy="34.4" r="13.4"/><circle  fill="%23001021" cx="891" cy="82.3" r="8.9" opacity=".51"/><circle  fill="%23001021" cx="374.5" cy="82.7" r="8.9" transform="rotate(-45 375 83)" opacity=".51"/><circle  fill="%23001021" cx="112.5" cy="84.7" r="6.1" opacity=".51"/><path fill="%23001021" d="M834 0v1a80 80 0 01-27 42 80 80 0 01-41 18 80 80 0 01-29-2 80 80 0 01-58-59h-1z" opacity=".51"/><path fill="%23001021" d="M2000 0v44a63 63 0 01-15 4l-1 1c-16 2-33 0-50-3l-62-11a363 363 0 00-48-3h-20a323 323 0 00-35 5l-31 7-30 5a195 195 0 01-83-3l-22-5a96 96 0 00-51 3l-22 7c-14 5-29 10-44 9-17 0-34-7-50-14-9-4-19-9-29-11a72 72 0 00-34-3 84 84 0 00-19 7l-18 8a128 128 0 01-96 2l-4-2c-11-4-21-10-32-13l-4-2c-18-5-37-4-56-2h-1l-77 5a121 121 0 01-66-9l-4 2c-19 9-41 8-62 7l-77-5h-1a166 166 0 00-60 4c-11 3-21 9-32 13l-4 2a128 128 0 01-96-2l-18-8a84 84 0 00-19-7l-3-1c-10-1-21 0-31 4-10 2-19 7-29 11-16 7-33 14-50 14-15 1-30-4-44-9l-22-7a96 96 0 00-51-3l-22 5a443 443 0 01-24 5c-20 3-40 1-59-2l-30-5-31-7a323 323 0 00-35-5h-20a363 363 0 00-48 3L66 46c-17 3-34 6-50 3h-1a63 63 0 01-15-5V0z"/><path fill="%23001021" d="M1458 0c21 9 48 18 80 29a127 127 0 0065 5l1-1 32-7 19-4a78 78 0 0119-1 87 87 0 0124 4 180 180 0 0125 11l6 3 2 1 7 4 2 1 21 9c16 7 31 7 46 4 15-2 31-8 46-15l19-8c19-7 38-13 58-12h3a71 71 0 0132 10 97 97 0 0119 16 283 283 0 0116 18V32c-18-11-38-19-57-22-31-4-69 5-99 14l-10 3a70 70 0 00-10 5c-17 8-36 15-54 6l-1-1a199 199 0 01-18-11l-11-7a76 76 0 00-11-5 87 87 0 00-18-5 124 124 0 00-19-1 265 265 0 00-32 2c-21 2-43 7-62 5-17-2-32-8-47-15z" opacity=".51"/><path fill="%23001021" d="M1304 0c17 13 33 28 50 39 16 10 33 16 54 13a251 251 0 0028-6c29-8 56-17 83 0l11 5c45 21 111 28 178-2q11-4 21-10l22-13a307 307 0 0033-26h-82a403 403 0 01-28 21 238 238 0 01-35 19 138 138 0 01-14 6 140 140 0 01-17 4 91 91 0 01-32 1 103 103 0 01-24-7c-31-14-56-36-115-21-11 2-19 8-30 12l-4 1c-10 2-19 0-27-5-12-6-23-17-32-23l-15-8z" opacity=".51"/><circle  fill="%23001021" cx="1940.8" cy="72.6" r="17.1" transform="rotate(-23 1941 73)" opacity=".51"/><path fill="%23001021" d="M1420 0a19 19 0 006 9 19 19 0 0026-5 18 18 0 002-4z"/><circle  fill="%23001021" cx="1710.8" cy="30" r="13.4" transform="translate(0 66)"/><circle  fill="%23001021" cx="1741.9" cy="62.6" r="5.9" opacity=".51"/><circle  fill="%23001021" cx="1060.7" cy="63.8" r="18.6" opacity=".51"/><circle  fill="%23001021" cx="1320.5" cy="34.4" r="13.4"/><circle  fill="%23001021" cx="1109" cy="82.3" r="8.9" opacity=".51"/><circle  fill="%23001021" cx="1625.5" cy="82.7" r="8.9" transform="rotate(-45 1625 83)" opacity=".51"/><circle  fill="%23001021" cx="1887.5" cy="84.7" r="6.1" opacity=".51"/><path fill="%23001021" d="M1166 0v1a80 80 0 0027 42 80 80 0 0041 18 80 80 0 0029-2 80 80 0 0058-59h1z" opacity=".51"/></svg>');
+}
+
+@media (min-width: 768px) {
+  .shapedividers_com-2143::before {
+    background-size: 100% 37px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shapedividers_com-2143::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 69px;
+    background-position: 50% 0%;
+  }
+}
+@media (min-width: 2100px) {
+  .shapedividers_com-2143::before {
+    background-size: 100% calc(2vw + 69px);
+  }
+}
+
+/* Otro divider */
+
+.shapedividers_com-3482 {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+.shapedividers_com-3482::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 19px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000.4 84.2"><g fill="%23001730"><circle cx="666" cy="43.7" r="14"/><circle cx="132.7" cy="44.1" r="14"/><path d="M253 54l-7 12 7 11h12l7-11-7-12h-12zM372 61l-3 6 3 7h8l4-7-4-6h-8zM22 67l-4 7 4 8h9l4-8-4-7h-9zM588 61l-6 10 6 9h11l6-9-6-10h-11zM1217 33a9 9 0 109 8 9 9 0 00-9-8zM840 58l-6 12 6 11h13l6-11-6-12h-13zM960 65l-4 7 4 6h7l4-6-4-7h-7zM1175 65l-5 10 5 9h12l5-9-5-10h-12zM1303 68l-4 7 4 6h7l4-6-4-7h-7z"/><path d="M1918 0H0v49c10 8 26 12 40 10a32 32 0 0011 3c13 1 15-1 18-1 18-5 25-20 39-32 8-7 16-15 27-16 13-1 24 9 31 20s11 24 20 33 25 15 35 7c11-9 9-29 22-37a15 15 0 012-1c6-2 13-1 18 1a58 58 0 019 5l10 6a93 93 0 0045 14c7 0 14 0 19-5a12 12 0 004-11c0-4-3-7-5-11a11 11 0 01-1-9 17 17 0 0115-12c13-1 24 9 31 20s11 24 20 33 25 15 35 7c11-9 10-28 21-36a16 16 0 011-1c6-3 14-2 21 0a50 50 0 015 3l13 8a93 93 0 0045 14c5 0 11 0 16-3 4-2 7-6 8-11a35 35 0 006 0 44 44 0 0013-5c19-10 20-16 35-22 13-6 27-5 41-5s28-1 40 5c16 6 17 12 35 22a44 44 0 0013 5 35 35 0 007 0c0 5 3 9 8 11 5 3 10 3 16 3a93 93 0 0045-14l12-8a50 50 0 016-3c6-2 14-3 20 0a16 16 0 012 1c11 8 10 27 21 36 10 8 26 3 34-7s14-22 21-33 17-21 30-20h1a17 17 0 0115 12 11 11 0 01-1 9c-2 4-5 7-6 11a12 12 0 004 11c6 5 13 5 20 5a93 93 0 0045-14l10-6a58 58 0 018-5c6-2 13-3 19-1a15 15 0 011 1c13 8 11 28 23 37 10 8 26 3 35-7s13-22 20-33 17-21 30-20a24 24 0 015 1c8 2 16 9 23 15 14 12 21 27 38 32l4 1 4-1c18-5 24-20 38-32 7-6 15-13 24-15a24 24 0 014-1c13-1 24 9 30 20s12 24 21 33 24 15 34 7c12-9 10-29 23-37a15 15 0 011-1c6-2 13-1 19 1a58 58 0 018 5l10 6a93 93 0 0045 14c7 0 14 0 20-5a12 12 0 004-11c-1-4-4-7-6-11a11 11 0 01-1-9 17 17 0 0115-12h1c13-1 24 9 31 20s11 24 20 33 24 15 34 7c11-9 10-28 21-36a16 16 0 012-1c6-3 14-2 20 0a50 50 0 016 3l12 8a93 93 0 0046 14c5 0 11 0 15-3 5-2 8-6 8-11a35 35 0 007 0 44 44 0 0013-5c18-10 19-16 35-22 12-6 26-5 40-5s28-1 41 5c15 6 16 12 35 22a44 44 0 0013 5 35 35 0 006 0c1 5 4 9 8 11 5 3 11 3 16 3h3V0z"/><circle cx="1874.5" cy="43.7" r="14"/><circle cx="1341.3" cy="44.1" r="14"/><path d="M1461 54l-6 12 6 11h13l6-11-6-12h-13zM1958 63l-4 8 5 8h10l4-9-5-8-10 1zM1231 67l-5 7 5 8h8l5-8-5-7h-8zM1074 54l-5 8 5 8h9l4-8-4-8h-9zM1796 61l-5 10 5 9h12l5-9-5-10h-12z"/></g></svg>');
+}
+
+@media (min-width: 768px) {
+  .shapedividers_com-3482::before {
+    background-size: 100% 36px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shapedividers_com-3482::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 69px;
+    background-position: 50% 0%;
+  }
+}
+@media (min-width: 2100px) {
+  .shapedividers_com-3482::before {
+    background-size: 100% calc(2vw + 69px);
+  }
+}
+
+/* Agrega esto en tu archivo de estilos CSS o en linea si lo prefieres */
+@media (max-width: 640px) {
+  .menu-columns {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem; /* Añade gap horizontal entre las columnas */
+    row-gap: 1rem; /* Opcional: para agregar espacio entre los elementos */
+  }
 }
