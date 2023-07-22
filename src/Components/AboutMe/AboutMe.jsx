@@ -24,7 +24,7 @@ function AboutMe() {
               className="h-40 w-40 rounded-full sm:mt-0 mt-5"
             />
           </div>
-          <h1 className="text-3xl">Jonatan Elizlade Gomez</h1>
+          <h1 className="text-3xl">Jonatan Elizalde Gomez</h1>
           <p className="text-justify text-lg pt-5">
             Soy un estudiante de software con una gran pasion por la tecnologia
             y el aprendizaje. Me considero una persona proactiva, con fuertes

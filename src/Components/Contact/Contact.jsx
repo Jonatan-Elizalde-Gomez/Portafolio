@@ -43,7 +43,7 @@ function Contact() {
           </a>
 
           <a
-            href="src/assets/download.svg"
+            href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="CV - Jonatan Elizalde Gomez"
