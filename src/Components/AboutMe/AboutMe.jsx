@@ -26,15 +26,14 @@ function AboutMe() {
           </div>
           <h1 className="text-3xl">Jonatan Elizalde Gomez</h1>
           <p className="text-justify text-lg pt-5">
-            Soy un estudiante de software con una gran pasion por la tecnologia
-            y el aprendizaje. Me considero una persona proactiva, con fuertes
-            habilidades de comunicacion y una profunda curiosidad por adquirir
-            nuevas habilidades y conocimientos. Me esfuerzo por estar al dia con
-            las ultimas tendencias tecnologicas y siempre estoy buscando nuevas
-            formas de mejorar mis habilidades. Me gusta trabajar en equipo y
-            creo que los mejores resultados se logran a traves de la
-            colaboracion entre personas. Me gusta usar mi creatividad para crear
-            soluciones innovadoras.
+            Soy un apasionado desarrollador web con una firme dedicación por la
+            tecnología y el aprendizaje continuo. Mi proactividad, habilidades
+            comunicativas y sed de conocimiento me han impulsado a mantenerme al
+            tanto de las últimas tendencias tecnológicas, siempre en busca de
+            oportunidades para perfeccionar mis habilidades. Disfruto
+            colaborando en equipo y creo firmemente en que la innovación surge
+            de la creatividad conjunta, aplicando soluciones ingeniosas para
+            alcanzar los mejores resultados.
           </p>
         </Fade>
 

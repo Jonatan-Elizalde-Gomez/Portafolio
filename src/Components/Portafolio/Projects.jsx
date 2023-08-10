@@ -5,22 +5,22 @@ import Card from "./Card";
 
 const cards = [
   {
-    imagen: "/codeven.jpg",
-    titulo: "Coven",
-    parrafo:
-      "Un proyecto de gestion de un sembradio con funciones completas de seguimiento de productos, mermas, compras, ventas y clientes. Diseñado con Java EE y Glassfish, la pagina web presenta una interfaz de usuario atractiva. Actualmente, solo se muestra la parte del front-end, mientras que la base de datos se almacena localmente.",
-    link1: "https://github.com/Jonatan-Elizalde-Gomez/pagina-web-coven",
-    link2: "https://jonatan-elizalde-gomez.github.io/pagina-web-coven/",
-    mostrarIcono1: true,
-    mostrarIcono2: true,
-  },
-  {
     imagen: "/pixelboost.jpg",
     titulo: "PixelBoost",
     parrafo:
       "PixelBoost es mi proyecto de maquetado de una pagina web de e-commerce que ofrece servicios para crear y posicionar empresas digitalmente. Desarrollado con React y Tailwind. ",
     link1: "https://github.com/Jonatan-Elizalde-Gomez/pixelboost",
     link2: "https://main--glittering-kringle-6d5487.netlify.app/#/",
+    mostrarIcono1: true,
+    mostrarIcono2: true,
+  },
+  {
+    imagen: "/codeven.jpg",
+    titulo: "Coven",
+    parrafo:
+      "Un proyecto de gestion de un sembradio con funciones completas de seguimiento de productos, mermas, compras, ventas y clientes. Diseñado con Java EE y Glassfish, la pagina web presenta una interfaz de usuario atractiva. Actualmente, solo se muestra la parte del front-end, mientras que la base de datos se almacena localmente.",
+    link1: "https://github.com/Jonatan-Elizalde-Gomez/pagina-web-coven",
+    link2: "https://jonatan-elizalde-gomez.github.io/pagina-web-coven/",
     mostrarIcono1: true,
     mostrarIcono2: true,
   },
