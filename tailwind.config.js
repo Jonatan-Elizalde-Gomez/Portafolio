@@ -6,7 +6,8 @@ export default {
       colors: {
         'backgroundColor': '#001021',
         'letters':'#FCEBC1',
-        'secondaryColor':'#000E1C'
+        'blueSwitch': '#345E72',
+        'secondaryColor':'#000E1C',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

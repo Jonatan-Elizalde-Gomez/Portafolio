@@ -1,0 +1,14 @@
+{
+    "aboutMeInfo": "I'm a passionate front-end web developer with a love for technology and learning. I'm proactive, with excellent communication skills, and a strong curiosity for acquiring knowledge. I always stay up-to-date with the latest technological trends, collaborate well in teams, and apply my creativity to innovative solutions.",
+    "aboutMe": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "pixelboost":"PixelBoost is my project for designing an e-commerce website layout that offers services for creating and positioning companies digitally. Developed with React and Tailwind.",
+    "coven": "A project for managing a farm with complete functions for tracking products, wastage, purchases, sales, and customers. Designed with Java EE and Glassfish, the website features an attractive user interface. Currently, only the front-end part is displayed, while the database is stored locally.",
+    "flutterApp": "It's an Android application developed in Flutter that uses the Google Maps API. The application allows users to make routes taking into account the point closest to their current location. I used the Google Maps API to calculate distances between various points and then determine which is the closest point to the user.",
+    "salleApp": "I led the front-end team in developing a web application with Google Maps geolocation for the Universidad De La Salle Bajío. Featuring a CMS for content management, enables users to locate sculptures, auditoriums, and buildings on campus.",
+    "sendEmail": "Send your email to",
+    "orCall": "or call"
+  }
+  

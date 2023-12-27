@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTransition, animated } from "react-spring";
-
 import menuSvg from "/menu.svg";
 import closeSvg from "/close.svg";
 import downloadSvg from "/download.svg";
+import { useTranslation } from 'react-i18next';
+import LanguageSwitch from "./Shared/LanguageSwitch";
 
 function NavBar() {
+  const { t } = useTranslation();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
   const navRef = useRef(null);
@@ -37,9 +40,9 @@ function NavBar() {
   });
 
   const menuItems = [
-    { id: "about-me", label: "Acerca de mi" },
-    { id: "portafolio", label: "Portafolio" },
-    { id: "contact-me", label: "Contacto" },
+    { id: "about-me", label: t('aboutMe')},
+    { id: "portafolio", label: t('portfolio') },
+    { id: "contact-me", label: t('contact') },
   ];
 
   // Funcion para desplazarse suavemente hacia la seccion correspondiente al hacer clic en el enlace del NavBar
@@ -71,9 +74,12 @@ function NavBar() {
       } h-fit font-thin text-xl bg-backgroundColor border-letters border-b w-full text-letters`}
       ref={navRef}
     >
-      <div className="flex justify-between items-center px-4 py-4 sm:pt-6">
+      <div className="flex justify-between items-center px-4 py-4 lg:pt-6">
         <div>
-          <button className="font-medium sm:hidden" onClick={toggleMenu}>
+          <div className="hidden lg:block">
+        <LanguageSwitch/>
+          </div>
+          <button className="font-medium lg:hidden" onClick={toggleMenu}>
             {!menuOpen ? (
               <img src={menuSvg} width={"40px"} alt="Menu" />
             ) : (
@@ -81,8 +87,9 @@ function NavBar() {
             )}
           </button>
         </div>
-        <div className="hidden sm:block">
-          <div className="flex space-y-4 sm:space-y-0 sm:space-x-10 items-center">
+        <div className="hidden lg:block">
+          <div className="flex space-y-4 lg:space-y-0 lg:space-x-10 items-center">
+        
             {menuItems.map((item) => (
               <div
                 key={item.id}
@@ -98,14 +105,14 @@ function NavBar() {
           (style, item) =>
             item && (
               <animated.div
-                className={`sm:flex sm:space-x-10 sm:items-center menu-columns`}
+                className={`lg:flex lg:space-x-10 lg:items-center menu-columns`}
                 style={style}
               >
                 {menuItems.map((item) => (
                   <div
-                    key={item.id}
-                    className="cursor-pointer"
-                    onClick={() => scrollToSection(item.id)}
+                  key={item.id}
+                  className="cursor-pointer"
+                  onClick={() => scrollToSection(item.id)}
                   >
                     {item.label}
                   </div>
@@ -123,7 +130,10 @@ function NavBar() {
               </animated.div>
             )
         )}
-        <div className="hidden sm:block">
+        <div className="lg:hidden">
+        <LanguageSwitch/>
+        </div>
+        <div className="hidden lg:block">
           <a
             className="flex gap-x-1.5"
             href="/cv.pdf"

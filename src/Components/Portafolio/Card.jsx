@@ -13,7 +13,7 @@ const Card = ({
   return (
     <Fade bottom>
     <div
-      className="bg-[#001730] rounded-lg p-8 w-80 sm:w-[500px] text-letter shadow-4xl shadow-red-200 ring-2 ring-offset-2 ring-[#001021]"
+      className="bg-[#001730] rounded-lg p-8 w-80 lg:w-[500px] text-letter shadow-4xl shadow-red-200 ring-2 ring-offset-2 ring-[#001021]"
       style={{
         boxShadow: "rgba(37, 80, 125, 0.3) 0px 0px 29px 2px",
         display: "flex",
