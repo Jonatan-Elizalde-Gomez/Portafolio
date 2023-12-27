@@ -77,7 +77,7 @@ function NavBar() {
       <div className="flex justify-between items-center px-4 py-4 lg:pt-6">
         <div>
           <div className="hidden lg:block">
-        <LanguageSwitch/>
+        <LanguageSwitch id="1"/>
           </div>
           <button className="font-medium lg:hidden" onClick={toggleMenu}>
             {!menuOpen ? (
@@ -131,7 +131,7 @@ function NavBar() {
             )
         )}
         <div className="lg:hidden">
-        <LanguageSwitch/>
+        <LanguageSwitch id="2"/>
         </div>
         <div className="hidden lg:block">
           <a
