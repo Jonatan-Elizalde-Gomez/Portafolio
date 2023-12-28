@@ -8,8 +8,9 @@ const LanguageSwitch = ({ id }) => {
 
   const toggleLanguage = () => {
     setIsEnglish(!isEnglish);
-    i18n.changeLanguage(isEnglish ? 'es' : 'en');
+    i18n.changeLanguage(!isEnglish ? 'en' : 'es'); 
   };
+  
 
   const toggleId = `Toggle-${id}`;
 

@@ -7,7 +7,8 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitch from "./Shared/LanguageSwitch";
 
 function NavBar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cvLink = i18n.language === 'en' ? '/cv-en.pdf' : '/cv-es.pdf';
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -119,7 +120,7 @@ function NavBar() {
                 ))}
                 <a
                   className="flex gap-x-1.5"
-                  href="/cv.pdf"
+                  href={cvLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   download="CV - Jonatan Elizalde Gomez"
@@ -136,7 +137,7 @@ function NavBar() {
         <div className="hidden lg:block">
           <a
             className="flex gap-x-1.5"
-            href="/cv.pdf"
+            href={cvLink}
             target="_blank"
             rel="noopener noreferrer"
             download="CV - Jonatan Elizalde Gomez"

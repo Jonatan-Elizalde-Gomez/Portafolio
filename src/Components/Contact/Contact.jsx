@@ -4,7 +4,8 @@ import { Fade, Bounce } from "react-reveal";
 import { useTranslation } from 'react-i18next';
 
 function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cvLink = i18n.language === 'en' ? '/cv-en.pdf' : '/cv-es.pdf';
 
   return (
     <section
@@ -46,7 +47,7 @@ function Contact() {
           </a>
 
           <a
-            href="/cv.pdf"
+            href={cvLink}
             target="_blank"
             rel="noopener noreferrer"
             download="CV - Jonatan Elizalde Gomez"
